@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='author' content='Carter Bochek'>
+	<meta name='description' content='Carter Bochek`s personal portfolio page'>
+	<meta name='keywords' content='Portfolio, Web Developer, HTML, CSS, Javascript'>
+	<!--Adding fontawesome Kit to website-->
+	<script src="https://kit.fontawesome.com/0d2f64c33a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/styles/home.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--End of Meta Data-->
+	<!--Adding Fonts to webpage-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<!--Change the icon of my website-->
+	<link rel="shortcut icon" href="images/cube-solid.svg">
+	<!--End of Fonts-->
+
+	<title>Carter Bochek's Portfolio Page</title>
+</head>
+<body>
+<header>
+	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	<nav id="nav-menu">
+		<a class="nav-btn" href="#">Home</a>
+		<a class="nav-btn" href="#about-me">About</a>
+		<a class="nav-btn" href="#contact-section">Contact</a>
+		<a class="nav-btn" href="#my-projects">Projects</a>
+		<!--Will add Personal Training Nav Button back in once it is completed-->
+		<!-- <a class="nav-btn" href="html-pages/personal-training.html">Personal Training</a> -->
+
+	</nav>
+
+</header>
+<main>
+<!--Creating #my-profile; this is a container that will give a general summary of who I am and my picture-->
+	<div id='my-profile'>
+		<h1 id='my-name' class="emphasis">Hi.<br>I'm Carter Bochek</h1>
+		<img id='profile-picture' src="/images/my-profile-picture.png" alt="Carter Bochek">
+		<h2 class='brief-description'>I am a <em class="emphasis">Developer</em> and a <em class="emphasis">Personal Trainer</em></h2>
+	</div>
+
+<!--Creating a path for the About button -->
+
+<!--Start of About Section-->
+<section id="about-me">
+	<div id='my-description'>
+<!--Flex container #description box will have 2 boxes that take up half of the screen each (50vw)-->
+		<div class='description-box'>
+			<h2 class='brief-description'>About Me</h2>
+			<p>I love learning how new techologies work and interact with one another. I am currently expanding my knowledge with javascript and learning how to bring static webpages to life.
+				<br><br>
+					In my free time I love to hit the gym and lift weights. I like to have my body and mind in sync with one another.
+			</p>
+		</div>
+		<div id='#fitness-info'>
+			<!-- <img id='my-setup' src="/images/personal-training-progress-pic1.jpg" alt="Carter's workstation/pc setup at home"> -->
+		</div>
+		<!--Inside this div there will be a 2 column flexbox container. The left side will contain
+		text about myself and the right side will be a picture of my desk and setup.-->
+	</div>
+<!--End of About Section-->
+</section>
+<!--Start of Projects Section-->
+<section id='my-projects'>
+	<h2 class="project-title brief-description">Projects</h2>
+	<div class='project-wrapper'>
+
+<!--Color Switch Project-->
+		<a class='project-one projects' title='Click to go to Carter`s github Color Switch project'  href="https://github.com/CarterBochek/Color-Switch" target='_blank'>
+			<img class="project-image" src="/images/color-switch-thumbnail.png" alt="Color switch project thumbnail">
+			<h3 class="project-name"><em>Color Switch</em></h3>
+		</a>
+
+<!--Weather Widget Project-->
+		<a class='project-two projects' title='Click here to checkout the weather widget on github' href="https://github.com/CarterBochek/weather-widget" target='_blank'>
+			<img class="project-image" src="/images/weather-widget-thumbnail.png" alt="Color switch project thumbnail">
+			<h3 class="project-name"><em>Weather Widget</em></h3>
+		</a>
+
+<!--Super Cat Flexbox Project-->
+		<a class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>
+			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
+			<h3 class="project-name"><em>Super Cat Flexbox</em></h3>
+		</a>
+
+		<a class='project-four projects' title='Click here to checkout Barrin the Archmage project!'  href="https://github.com/CarterBochek/barrin-the-archmage-tribute-page" target='_blank'>
+			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
+			<img class="project-image" src="/images/barrin-archmage-thumbnail.png" alt="Barrin the archmage thumbnail">
+			<h3 class="project-name"><em>Barrin the Archmage</em></h3>
+		</a>
+
+		<a class='project-five projects' title='Click here to checkout Technical Health page!'  href="https://github.com/CarterBochek/technical-health" target='_blank'>
+			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
+			<img class="project-image" src="images/technical-health-documentation.png" alt="Technical Health thumbnail">
+			<h3 class="project-name"><em>Technical Health</em></h3>
+		</a>
+
+		<a class='project-six projects' title='Click here to checkout my Workout Form project!!'  href="https://github.com/CarterBochek/workout-form" target='_blank'>
+			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
+			<img class="project-image" src="images/survey-form-workout.png" alt="Workout form thumbnail">
+			<h3 class="project-name"><em>Workout Form</em></h3>
+		</a>
+
+		<!-- <a class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>Super Cat Flexbox
+			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
+		</a>
+
+		<a class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>Super Cat Flexbox
+			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
+		</a> -->
+
+	</div>
+</section>
+<!--End of Projects Section-->
+</main>
+<!--Begin Contact Section-->
+<section id="contact-section">
+<footer>
+	<h2 class="contact-heading brief-description">Want to Reach Out? <br> Let's chat</h2>
+	<form action="https://carterbochek.com" method="get" id="contact-form">
+		<div class="form-container">
+			<label for="name">Enter your name</label>
+			<input type="text" name="name" id="name" placeholder="Your Name" required>
+		</div>
+		<div class="form-container">
+			<label for="email">Enter your email</label>
+			<input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+		</div>
+		<div class="form-container">
+			<textarea name="your-message" cols="30" rows="10" class="your-message" form="contact-form">What's on your mind?</textarea>
+			<br>
+			<input type="submit" value="Send Message" class="nav-btn">
+		</div>
+		<div class="contact-buttons">
+			<a href="https://github.com/CarterBochek" class="contact-button profile-link" target="_blank" title='Link to Carters github page'>
+				<img class="my-media" src="/images/github.svg" alt="github profile link">
+			</a>
+
+			<a href="https://codepen.io/carter-a-bochek/pens/" class="contact-button profile-link" target="_blank" title='Link to Carters codepen projects'>
+				<img class="my-media" src="/images/codepen.svg" alt="codepen profile link">
+			</a>
+		</div>
+	</form>
+<!--End the Contact Section-->
+<!--Adding scrollup javascript button-->
+	 <button onclick="scrollUp()" id="scroll-btn" class="hidden" title="Scroll to top of page">
+<!--Font Awesome arrow up icon-->
+		<i class="fa-solid fa-arrow-up"></i>
+	</button> 
+</footer>
+</section>
+<script src="scripts/home.js" defer></script>
+<script src="/scripts/scroll-up.js" defer></script>
+</body>
+</html>

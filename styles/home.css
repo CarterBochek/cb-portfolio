@@ -1,0 +1,394 @@
+@media (max-width: 2560px) {
+* {
+	margin: auto;
+	color: white;
+}
+h1, h2, h3, a {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+	font-size: 2.5em;
+}
+/* em {
+	background-color: rgba(0, 0, 0, 0.747);
+	padding: 0vh 2vw;
+	border-radius: 1em;
+} */
+.fa.fa-bars {
+	visibility: hidden;
+}
+.emphasis {
+	background-color: rgba(0, 0, 0, 1);
+	padding: 0vh 2vw;
+	border-radius: 1em;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background: linear-gradient(to right, #240164, #5A02FC, #2637F7);
+	background-attachment: fixed;
+}
+header {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.850);
+/*////////////////////////////////////////////// */
+/*Line 17 - 18 will lock header into place*/
+/*////////////////////////////////////////////// */
+	position: sticky;
+	top: 0;
+	padding: 1%;
+	-webkit-transition: right 1s;
+	transition: right 1s;
+}
+nav {
+	transition: right 1s;
+	margin-bottom: 2vh;
+}
+.hidden {
+	display: none;
+}
+.nav-btn {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+	padding: 0.75em 1em;
+	border-radius: 1em;
+	transition: 400ms;
+	margin: 0em 0.2em;
+}
+.nav-btn:hover {
+	background-color: white;
+	color: black;
+}
+h1#my-name {
+	display: inline-block;
+	text-align: center;
+	font-size: 2.5em;
+	color: white;
+	padding: 1.5%;
+	transition: 400ms;
+	border-radius: 1em;
+	margin-bottom: 9vh;
+}
+#my-profile {
+	min-height: 100vh;
+	min-width: 100vw;
+	text-align: center;
+	margin-top: 5vh;
+}
+#profile-picture {
+	height: 38vh;
+	width: 18vw;
+	/*border: solid white 3px;*/
+	border-radius: 50%; 
+	margin-top: 5vh;
+	margin-left: 1vw;
+	transition: 400ms;
+}
+h2.brief-description {
+	color: white;
+	font-size: 2.5em;
+}
+h1#my-name:hover {
+	transform: scale(1.2);
+}
+img#profile-picture:hover {
+	transform: scale(1.2);
+}
+div#my-description {
+	display: flex;
+	min-height: 100vh;	
+	background-color: black;
+	justify-items: center;
+}
+div.description-box {
+	flex: 1;
+	margin-left: 5vw;
+	margin-right: 1vw;
+	margin-top: 20vh;
+	border-radius: 2em;
+}
+.description-box h2 {
+	margin-left: 2vw;
+	margin-top: 1vh;
+}
+.description-box p {
+	font-family: 'Lora', serif;
+	margin-right: 1vw;
+	margin-left: 2vw;
+	margin-top: 4vh;
+	margin-bottom: 1vh;
+	font-size: 1.2em;
+}
+.description-box h3 {
+	margin-left: 2vw;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+/*////////////////////////////////////////////// */
+/*#workspace-picture is the flex container*/
+/*////////////////////////////////////////////// */
+div#fitness-info {
+	flex: 1;
+	margin-left: 1vw;
+	background-color: white;
+}
+/*////////////////////////////////////////////// */
+/*#my-setup is the actual image*/
+/*////////////////////////////////////////////// */
+img#my-setup {
+	height: 59vh;
+	width: 40vw;	
+	border-radius: 2em;
+	box-shadow: 2px 2px 2px black;
+}
+#project-heading {
+	margin-left: 2vw;
+	/* flex: 1; */
+}
+a#project-button {
+	margin-bottom: 30vh;
+}
+.project-title {
+	text-align: center;
+	margin: 10%;
+}
+/*////////////////////////////////////////////// */
+/*Applying a grid to project-wrapper*/
+/*////////////////////////////////////////////// */
+div.project-wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.project-image {
+	object-fit: cover;	
+	border-radius: 1em;
+	box-shadow: 1px 1px 1px black;
+	height: 43vh;
+	width: 30vw;
+}
+.projects {
+	text-align: center;	
+	text-decoration: none;
+}
+footer {
+	text-align: center;
+}
+.contact-heading {
+	padding-top: 20vh;
+}
+.contact-form {
+	height: 60vh;
+	padding-top: 10vh;
+}
+.form-container {
+	margin: 3vh 0vw;
+}
+input {
+	color: black;
+	margin-left: 1vw;
+	padding: 0.2em;
+	text-align: center;
+	border-radius: 0.5em;
+	margin-right: 8vw;
+}
+input:focus {
+	text-decoration: none;
+	
+}
+#message {
+	min-height: 10vh;
+	min-width: 30vw;
+	margin-right: 10vw;
+  }
+.your-message {
+	color: grey;
+	text-align: center;
+	border-radius: 0.5em;
+}
+input.nav-btn {
+	background-color: rgba(0, 0, 0, 0.747);
+	margin-top: 8vh;
+}
+.my-media {
+	height: 10vh;
+	width: 5vw;
+	margin-top: 5vh;
+}
+#scroll-btn {
+	font-size: 2em;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-left: 5px;
+	border: none;
+	border-radius: 50%;
+	height: 6vh;
+	width: 3vw;
+	position: fixed;
+	right: 5vw;
+	bottom: 4vh;
+	/* box-shadow: 1px 1px 1px #2b2b2b; */
+	transition: 400ms;
+	cursor: pointer;
+	
+}
+#scroll-btn:hover {
+	transform: scale(1.5);
+	background-color: rgba(0, 0, 0, 1);
+}
+/*Defining the website when the width is 1366px wide and lower*/
+@media (max-width: 1366px) {
+a.nav-btn {
+		font-size: 1.3em;
+}
+h1#my-name {
+		font-size: 2.3em;
+}
+h1#my-name:hover {
+	font-size: 3.5em;	
+}
+h2.brief-description {
+	font-size: 2.3em;
+}
+a {
+	border: none;
+	font-size: 1em;
+}
+a:hover {
+	background: none;
+	color: #BCBCBC;
+}
+#profile-picture {
+	height: 30vh;
+	width: 19vw;
+}
+/* #profile-picture:hover {
+	height: 32vh;
+	width: 22vw;
+} */
+#scroll-btn {
+	height: 6vh;
+	width: 4vw;
+}
+.my-media {
+	height: 10vh;
+	width: 7vw;
+	margin-top: 5.5vh;
+  }
+/* #scroll-btn:hover {
+	height: 7vh;
+	width: 4.5vw;
+} */
+/*Defining the website when the width is 1024px wide and lower*/
+@media (max-width: 1024px) {
+	#scroll-btn {
+		height: 6vh;
+		width: 5.4vw;
+	}
+	#profile-picture {
+		height: 30vh;
+		width: 25vw;
+	}
+}
+@media (max-width: 500px) {
+*:hover {
+	-webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.fa.fa-bars {
+	margin-right: 85vw;
+	visibility: visible;
+	}
+#nav-menu {
+	display: none;
+	padding-right: 85vw;
+	height: 18vh;
+	line-height: 4vh;
+}
+#profile-picture:hover {
+	transform: none;
+}
+#my-name:hover {
+	transform: none;
+}
+h1#my-name {
+	font-size: 3.3em;
+	background: none;
+	margin: 0%;
+  }
+  #profile-picture {
+	height: 31vh;
+	width: 51vw;
+	border-radius: 50%;
+	margin: 5vh 0vh;
+  }
+  div.project-wrapper {
+	grid-template-columns: repeat(1, 1fr);
+  }
+  /*Scroll Button is currently broken on mobile, so hiding it for now*/
+  #scroll-btn:hover {
+	transform: none;
+  }
+  #scroll-btn {
+	background-color: rgba(0, 0, 0, 1.0);
+	height: 6vh;
+	width: 11.4vw;
+}
+/*Description box is too small, I need to change the flex layout to columns*/
+div#my-description {
+	flex-direction: column;
+}
+div.description-box {
+	text-align: center;
+	margin: 5%;
+	padding: 2%;
+}
+img#my-setup {
+	margin-left: 3vw;
+	margin-bottom: 16vh;
+	height: 41vh;
+	width: 92vw;
+}
+/*Hiding Desktop Navigation buttons; creating a mobile menu instead*/
+#nav-menu {
+	overflow: hidden;
+	text-align: left;
+}
+/* Style the hamburger menu */
+.nav-menu a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  /* Add a grey background color on mouse-over */
+.nav-menu a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  .project-image {
+	height: 40vh;
+	width: 75vw;
+	margin-top: 10%;
+  }
+  #contact-section {
+	margin-top: 100rem;
+  }
+  #comments {
+	width: 40vw;
+	height: 3vh;
+  }
+  .my-media {
+	height: 10vh;
+	width: 17vw;
+	margin-top: 13vh;
+  }
+}
+}
+}
