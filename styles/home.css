@@ -6,6 +6,15 @@
 h1, h2, h3, a {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+h2 {
+	font-weight: 450;
+    background: -webkit-linear-gradient(45deg, #9c77ff, aqua 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	width: 10vw;
+	width: 20vw;
+	margin: 0;
+}
 h1 {
 	font-size: 2.5em;
 }
@@ -26,7 +35,7 @@ a {
 	text-decoration: none;
 }
 body {
-	background: linear-gradient(to right, #240164, #5A02FC, #2637F7);
+	background: linear-gradient(#240164, #22295a, aqua);
 	background-attachment: fixed;
 	overflow-x: hidden;
 }
@@ -65,31 +74,37 @@ nav {
 h1#my-name {
 	display: inline-block;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 3.2em;
 	color: white;
 	padding: 1.5%;
 	transition: 400ms;
 	border-radius: 1em;
-	margin-bottom: 9vh;
+	/* border-bottom: solid 1px #9c77ff; */
+	margin-bottom: 10vh;
 }
 #my-profile {
 	min-height: 100vh;
 	min-width: 100vw;
-	text-align: center;
+	text-align: left;
 	margin-top: 5vh;
+	margin-left: 10vw;
 }
-#profile-picture {
+/* #profile-picture {
 	height: 38vh;
-	width: 18vw;
+	width: 18vw; */
 	/*border: solid white 3px;*/
-	border-radius: 50%; 
+	/* border-radius: 50%; 
 	margin-top: 5vh;
 	margin-left: 1vw;
-	transition: 400ms;
-}
+	transition: 400ms; */
+/* } */
 h2.brief-description {
 	color: white;
 	font-size: 2.5em;
+	font-weight: 450;
+    background: -webkit-linear-gradient(45deg, #9c77ff, aqua 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h1#my-name:hover {
 	transform: scale(1.2);
@@ -100,7 +115,7 @@ img#profile-picture:hover {
 div#my-description {
 	display: flex;
 	min-height: 100vh;	
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.850);
 	justify-items: center;
 }
 div.description-box {
@@ -184,6 +199,9 @@ footer {
 section#contact-section {
     background: black;
     margin-top: 30vh;
+}
+#your-message {
+	color: black;
 }
 .contact-heading {
 	padding: 10%;

@@ -41,126 +41,119 @@
 
 </header>
 <main>
-<!--Creating #my-profile; this is a container that will give a general summary of who I am and my picture-->
+	<!--Creating #my-profile; this is a container that will give a general summary of who I am and my picture-->
 	<div id='my-profile'>
-		<h1 id='my-name' class="emphasis btn-theme">Hi.<br>I'm Carter Bochek</h1>
-		<img id='profile-picture' src="/images/my-profile-picture.png" alt="Carter Bochek">
-		<h2 class='brief-description'>I am a <em class="emphasis">Developer</em> and a <em class="emphasis">Personal Trainer</em></h2>
+		<h1 id='my-name' class="btn-theme">Carter Bochek</h1>
+		<!-- <img id='profile-picture' src="/images/my-profile-picture.png" alt="Carter Bochek"> -->
+		<h2 class='brief-description'>Developer & Personal Trainer</h2>
 	</div>
 
-<!--Creating a path for the About button -->
+	<!--Creating a path for the About button -->
 
-<!--Start of About Section-->
-<section id="about-me">
-	<div id='my-description'>
-<!--Flex container #description box will have 2 boxes that take up half of the screen each (50vw)-->
-		<div class='description-box'>
-			<h2 class='brief-description'>About Me</h2>
-			<p>I love learning how new techologies work and interact with one another. I am currently expanding my knowledge with javascript and learning how to bring static webpages to life.
-				<br><br>
-					In my free time I love to hit the gym and lift weights. I like to have my body and mind in sync with one another.
-			</p>
+	<!--Start of About Section-->
+	<section id="about-me">
+		<div id='my-description'>
+			<!--Flex container #description box will have 2 boxes that take up half of the screen each (50vw)-->
+			<div class='description-box'>
+				<h2 class='brief-description'>About Me</h2>
+				<p>I love learning how new technologies work and interact with one another. I am currently expanding my knowledge with JavaScript and learning how to bring static web pages to life.
+					<br><br>
+					In my free time, I enjoy running, lifting weights, and making websites. I also have a passion for helping others achieve their fitness goals as a Personal Trainer. My ultimate goal is to combine my skills as a Developer and a Personal Trainer to create innovative fitness applications and platforms.
+					<br><br>
+					I am a life-long learner and always seeking new challenges and opportunities to grow both personally and professionally. If you'd like to work together or just have a chat, feel free to reach out using the contact form below or connect with me on LinkedIn.
+				</p>
+			</div>
+			<!--End of #description-box-->
+			<div class='description-box'>
+				<h2 class='brief-description'>Skills</h2>
+				<p>
+					HTML<br>
+					CSS<br>
+					JavaScript<br>
+					Python<br>
+					React<br>
+					Node.js<br>
+					Git<br>
+					SQL<br>
+				</p>
+			</div>
+			<!--End of #description-box-->
 		</div>
-		<div id='#fitness-info'>
-			<!-- <img id='my-setup' src="/images/personal-training-progress-pic1.jpg" alt="Carter's workstation/pc setup at home"> -->
+	</section>
+	<!--End of About Me Section-->
+
+	<!--Start of Projects Section-->
+	<section id="my-projects">
+		<h2 class='brief-description'>My Projects</h2>
+		<div id='projects-grid'>
+			<div class='project-card'>
+				<h3>Project 1</h3>
+				<p>This is a brief description of project 1.</p>
+				<a href="#" class='btn-theme'>View Details</a>
+			</div>
+			<div class='project-card'>
+				<h3>Project 2</h3>
+				<p>This is a brief description of project 2.</p>
+				<a href="#" class='btn-theme'>View Details</a>
+			</div>
+			<div class='project-card'>
+				<h3>Project 3</h3>
+				<p>This is a brief description of project 3.</p>
+				<a href="#" class='btn-theme'>View Details</a>
+			</div>
+			<div class='project-card'>
+				<h3>Project 4</h3>
+				<p>This is a brief description of project 4.</p>
+				<a href="#" class='btn-theme'>View Details</a>
+			</div>
 		</div>
-		<!--Inside this div there will be a 2 column flexbox container. The left side will contain
-		text about myself and the right side will be a picture of my desk and setup.-->
-	</div>
-<!--End of About Section-->
-</section>
-<!--Start of Projects Section-->
-<section id='my-projects'>
-	<h2 class="project-title brief-description">Projects</h2>
-	<div class='project-wrapper'>
+	</section>
+	<!--End of Projects Section-->
 
-<!--Color Switch Project-->
-		<a rel="noopener" class='project-one projects' title='Click to go to Carter`s github Color Switch project'  href="https://github.com/CarterBochek/Color-Switch" target='_blank'>
-			<img class="project-image" src="/images/color-switch-thumbnail.png" alt="Color switch project thumbnail">
-			<h3 class="project-name"><em>Color Switch</em></h3>
-		</a>
-
-<!--Weather Widget Project-->
-		<a rel="noopener"class='project-two projects' title='Click here to checkout the weather widget on github' href="https://github.com/CarterBochek/weather-widget" target='_blank'>
-			<img class="project-image" src="/images/weather-widget-thumbnail.png" alt="Color switch project thumbnail">
-			<h3 class="project-name"><em>Weather Widget</em></h3>
-		</a>
-
-<!--Super Cat Flexbox Project-->
-		<a rel="noopener"class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>
-			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
-			<h3 class="project-name"><em>Super Cat Flexbox</em></h3>
-		</a>
-
-		<a rel="noopener"class='project-four projects' title='Click here to checkout Barrin the Archmage project!'  href="https://github.com/CarterBochek/barrin-the-archmage-tribute-page" target='_blank'>
-			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
-			<img class="project-image" src="/images/barrin-tolarian-archmage-thumbnail.png" alt="Barrin the archmage thumbnail">
-			<h3 class="project-name"><em>Barrin the Archmage</em></h3>
-		</a>
-
-		<a rel="noopener"class='project-five projects' title='Click here to checkout Technical Health page!'  href="https://github.com/CarterBochek/technical-health" target='_blank'>
-			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
-			<img class="project-image" src="images/technical-health-documentation.png" alt="Technical Health thumbnail">
-			<h3 class="project-name"><em>Technical Health</em></h3>
-		</a>
-
-		<a rel="noopener"class='project-six projects' title='Click here to checkout my Workout Form project!!'  href="https://github.com/CarterBochek/workout-form" target='_blank'>
-			<!--***As of Aug 2 7:23AM I will need to make a thumbnail of Barrin project and add it here-->
-			<img class="project-image" src="images/survey-form-workout.png" alt="Workout form thumbnail">
-			<h3 class="project-name"><em>Workout Form</em></h3>
-		</a>
-
-		<!-- <a class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>Super Cat Flexbox
-			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
-		</a>
-
-		<a class='project-three projects' title='Click here to checkout the super cat flexbox project on github'  href="https://github.com/CarterBochek/super-flexbox-cat" target='_blank'>Super Cat Flexbox
-			<img class="project-image" src="/images/super-cat-flexbox-thumbnail.png" alt="Color switch project thumbnail">
-		</a> -->
-
-	</div>
-</section>
-<!--End of Projects Section-->
+	<!--Start of Contact Section-->
+	<section id="contact-section">
+		<h2 class='brief-description'>Contact Me</h2>
+		<form action="send_message.php" method="post" id="contact-form">
+			<div class='form-group'>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Your name" required>
+			</div>
+			<div class='form-group'>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Your email" required>
+			</div>
+			<div class='form-group'>
+				<label for="your-message">Message:</label>
+				<textarea id="your-message" name="your-message" placeholder="Your message" required></textarea>
+			</div>
+			<button type="submit" class='btn-theme'>Send Message</button>
+		</form>
+	</section>
+	<!--End of Contact Section-->
 </main>
-<!--Begin Contact Section-->
-<section id="contact-section">
-<footer>
-	<h2 class="contact-heading brief-description">Want to Reach Out? <br> Let's chat</h2>
-	
-	<!-- <form action="https://carterbochek.com" method="get" id="contact-form">
-		<div class="form-container">
-			<label for="name">Enter your name</label>
-			<input type="text" name="name" id="name" placeholder="Your Name" required>
-		</div>
-		<div class="form-container">
-			<label for="email">Enter your email</label>
-			<input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-		</div>
-		<div class="form-container">
-			<textarea title="Message" name="your-message" cols="30" rows="10" class="your-message" form="contact-form" placeholder="Type in your message"></textarea>
-			<br>
-			<input type="submit" value="Send Message" class="nav-btn btn-theme">
-			<a href="mailto:carterabochek@gmail.com"></a>
-		</div>
-		<div class="contact-buttons">
-			<a rel="noopener" href="https://github.com/CarterBochek" class="contact-button profile-link" target="_blank" title='Link to Carters github page'>
-				<img class="my-media" src="/images/github.svg" alt="github profile link">
-			</a>
 
-			<a rel="noopener" href="https://codepen.io/carter-a-bochek/pens/" class="contact-button profile-link" target="_blank" title='Link to Carters codepen projects'>
-				<img class="my-media" src="/images/codepen.svg" alt="codepen profile link">
-			</a>
-		</div>
-	</form> -->
-<!--End the Contact Section-->
-<!--Adding scrollup javascript button-->
-	 <button onclick="scrollUp()" id="scroll-btn" class="hidden" title="Scroll to top of page">
-<!--Font Awesome arrow up icon-->
-		<i class="fa-solid fa-arrow-up"></i>
-	</button> 
+<footer>
+	<!-- <div id='social-links'>
+		<a href='https://www.linkedin.com/' target='_blank'><i class='fab fa-linkedin'></i></a>
+		<a href='https://github.com/' target='_blank'><i class='fab fa-github'></i></a>
+		<a href='https://twitter.com/' target='_blank'><i class='fab fa-twitter'></i></a>
+		<a href='https://www.instagram.com/' target='_blank'><i class='fab fa-instagram'></i></a>
+	</div> -->
+	<!--Adding a copyright-->
+	<div id='copy-right'>&copy; 2023 Carter Bochek. All rights reserved.</div>
 </footer>
-</section>
-<script src="scripts/home.js" defer></script>
-<script src="/scripts/scroll-up.js" defer></script>
+
+<script>
+	// Function to toggle the navigation menu on small screens
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+</script>
+
 </body>
 </html>
